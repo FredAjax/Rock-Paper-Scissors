@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>FIVE ROUND RPS!</h1>
+        <h2>Select your <span id="count">first</span> choice</h2>
+        <section id="playerchoices">
+            <div class="rps-choice"><span id="rock">✊</span></div>
+            <div class="rps-choice"><span id="paper">🤚</span></div>
+            <div class="rps-choice"><span id="scissors">✌️</span></div>
+        </section>
+    </header>
+    <main>
+        <div id="scores">
+            <span id=cpu-score>0</span>
+            <h2>CPU</h2>
+            <span id="dividing-line"></span>
+            <h2>PLAYER</h2>
+            <span id="player-score">0</span>
+        </div>
+        
+        <div class="round" id="round-one">
+            <span class="cpu-choice">?</span>
+            <span class="round-result"></span>
+            <span class="player-choice">?</span>
+        </div>
+
+        <div class="round" id="round-two">
+            <span class="cpu-choice">?</span>
+            <span class="round-result"></span>
+            <span class="player-choice">?</span>
+        </div>
+
+        <div class="round" id="round-three">
+            <span class="cpu-choice">?</span>
+            <span class="round-result"></span>
+            <span class="player-choice">?</span>
+        </div>
+
+        <div class="round" id="round-four">
+            <span class="cpu-choice">?</span>
+            <span class="round-result"></span>
+            <span class="player-choice">?</span>
+        </div>
+
+        <div class="round" id="round-five">
+            <span class="cpu-choice">?</span>
+            <span class="round-result"></span>
+            <span class="player-choice">?</span>
+        </div>
+    </main>
+    <button id="reset" onclick="resetGame()">RESET</button>
+    <script src="script.js"></script>
+</body>
+</html>
